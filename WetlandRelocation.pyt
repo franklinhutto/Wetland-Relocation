@@ -72,7 +72,6 @@ class Poof(object):
         arcpy.CheckOutExtension("Spatial")
         #Weighted Sum Overlay
         outWeightedSum = WeightedSum(WSTableObj)
-        #outSetNull = setNull(InR*,..., "VALUE < 10)
         #Save the output
         ModelName = parameters[0].valueAsText
         savedPath ="Model.gdb/" + ModelName
